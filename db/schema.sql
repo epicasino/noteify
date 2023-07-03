@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS noteify_db;
+
+CREATE DATABASE noteify_db;
