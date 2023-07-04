@@ -12,7 +12,10 @@ const PORT = process.env.PORT || 3001;
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
+// Makes 'public' folder for end-user in express
 app.use(express.static(path.join(__dirname, "public")));
+
+// Uses /controllers/index.js for routing
 app.use(require("./controllers"));
 
 // Starts the server to begin listening
